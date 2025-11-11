@@ -1,0 +1,86 @@
+const stories = {
+  TheForgottenLibrary: {
+    title: "The Forgotten Library",
+    content:
+      "In the heart of the ancient forest stood a library no one had visited in a hundred years. The stone walls were covered in moss, and the doors had long since rusted. Inside, thousands of books lined the shelves, their pages yellowed and fragile. A young adventurer pushed open the heavy doors and gasped. The air smelled of old leather and adventure. Each book contained a different world, a different story waiting to be discovered. She reached for one at random and opened it. The moment her fingers touched the first page, the world around her began to shimmer. She wasn't in the library anymore—she was standing in the exact scene described in the book's opening chapter. Time seemed to have no meaning here. She could stay for centuries and return to find only moments had passed. As she turned each page, she lived through an entirely new life, complete with memories, friendships, and adventures she would carry with her forever.",
+  },
+  MidnightInTheCity: {
+    title: "Midnight in the City",
+    content:
+      "The rain fell softly on the empty streets as midnight approached. Sarah stood at the edge of the rooftop, watching the city lights flicker like fallen stars. She had always loved this hour—when the world was quiet and full of possibility. Below her, a single person walked down the street, umbrella in hand. They paused under a streetlight and looked up directly at her. Without knowing why, Sarah waved. The stranger waved back. In that moment, she felt a strange connection, as if their souls had recognized each other across the distance. The stranger turned and walked down an alley, disappearing into shadow. Sarah never saw them again, but she would never forget that single moment of connection. Sometimes she wondered if they remembered her too, or if she was just a fleeting shadow on a rooftop they passed one rainy night.",
+  },
+  TheLastLightHouse: {
+    title: "The Last Lighthouse",
+    content:
+      "On a rocky island at the edge of the world stood the last lighthouse. It had guided ships safely for two hundred years, its light never wavering. Captain Jonas was its final keeper, the only human on the island for the last five years. Every night, he climbed the spiral stairs to light the great lamp, watching as its beam swept across the dark ocean. One stormy evening, something miraculous happened. The beam of light struck the clouds just right, creating a shimmering rainbow visible only at midnight. Within minutes, the lighthouse seemed to come alive. The walls hummed with ancient energy, and Jonas understood what was happening—the lighthouse wasn't just a building. It was a living guardian, a sentinel that had protected the oceans for centuries. In that moment, Jonas realized he wasn't just a keeper. He was part of something far greater, and his mission was far more important than he had ever imagined.",
+  },
+  TheGardenOfEternalSpring: {
+    title: "The Garden of Eternal Spring",
+    content:
+      "Hidden behind an ordinary wooden door in a busy marketplace was a garden that defied the laws of nature. Inside, it was always spring. Flowers bloomed in every color imaginable, the air was warm and filled with the scent of blossoms, and birds sang songs that hadn't been heard in centuries. A mysterious gardener tended to the plants with care and devotion. No one knew their name or where they had come from. Many believed the gardener was ageless, that they had been there forever. The truth was far more beautiful. The gardener was actually made of flowers themselves—a being of pure natural magic, created from the love and hope of everyone who had ever entered the garden. Every visitor who came through that ordinary door seeking peace would find it. And in return, they would leave a piece of their happiness behind, strengthening the garden's magic for the next visitor.",
+  },
+  WhispersFromThePast: {
+    title: "Whispers from the Past",
+    content:
+      "Maya discovered an old photograph in her grandmother's attic. It showed a young woman who looked exactly like her, standing in front of a building that no longer existed. On the back, a date: 1952. Confused, she asked her grandmother about it. The old woman smiled mysteriously and revealed a family secret. Their lineage wasn't ordinary—each generation carried fragments of their ancestors' memories in their dreams. Maya was experiencing an echo of her ancestor's life. That night, Maya fell asleep and found herself in the past. She walked the streets of a city as it was decades ago, experiencing her ancestor's greatest love, her deepest sorrow, and her most important decision. When Maya woke, she understood her life in a new way. She wasn't just an individual—she was part of a chain of souls, each connected to the ones before and after. Every choice she made would echo through time, just as her ancestors' choices had led to her existence.",
+  },
+  TheCodeBreaker: {
+    title: "The Code Breaker",
+    content:
+      "What is C++? C++ is a cross-platform language that can be used to create high-performance applications. C++ was developed by Bjarne Stroustrup, as an extension to the C language. C++ gives programmers a high level of control over system resources and memory. The language was updated 5 major times in 2011, 2014, 2017, 2020, and 2023 to C++11, C++14, C++17, C++20, and C++23. Why Use C++? C++ is one of the world's most popular programming languages. C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems. C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs. C++ is portable and can be used to develop applications that can be adapted to multiple platforms. C++ is fun and easy to learn! As C++ is close to C, C# and Java, it makes it easy for programmers to switch to C++ or vice versa. Difference between C and C++ was developed as an extension of C, and both languages have almost the same syntax. The main difference between C and C++ is that C++ supports classes and objects, while C does not. When you are finished with this tutorial, you will be able to write C++ programs and create real-life examples. It is not necessary to have any prior programming experience.",
+  },
+  TheComposersLastSymphony: {
+    title: "The Composer's Last Symphony",
+    content:
+      "An elderly composer sat at a grand piano, his fingers trembling but still strong. He had composed thousands of pieces in his lifetime, but tonight, he would create his masterpiece. His final symphony. As he played, the notes became visible in the air around him—golden streams of music that danced and swirled. The music told the story of his entire life: moments of joy, periods of heartbreak, triumph, failure, love, and loss. Every person he had ever known appeared in the music like ghosts, dancing to the melody. The entire city seemed to stop and listen. Even those who were nowhere near could feel the music in their hearts. When the final note rang out at dawn, the composer smiled peacefully. He had created something eternal—a piece of his soul that would continue to move people for centuries to come. His legacy wasn't in the number of compositions, but in the magic of this single, perfect piece.",
+  },
+  TheDreamCatchersDaughter: {
+    title: "The Dream Catcher's Daughter",
+    content:
+      "In a small village nestled between mountains, a young girl inherited an unusual gift from her mother: the ability to catch dreams. Every night, she would weave dreams into elaborate tapestries, creating visual representations of hopes, fears, and desires. People would come from distant lands seeking specific dreams—dreams of lost loved ones, dreams of future success, or dreams of healing. One day, a broken man arrived asking for an impossible dream: to remember what it was like to feel joy. The girl worked all night, weaving together fragments from thousands of happy dreams she had collected. When the man looked at the tapestry the next morning, he wept. Not from sadness, but from the overwhelming beauty of it. He realized that joy wasn't something that came from external circumstances—it was something that had always been inside him. He just needed to be reminded. As he left the village, he understood that the girl hadn't given him a dream. She had given him the key to reclaim his own.",
+  },
+}
+
+export async function POST(request) {
+  try {
+    const { fileName } = await request.json()
+
+    if (!fileName) {
+      return Response.json({ error: "Missing file name" }, { status: 400 })
+    }
+
+    // Extract filename without extension
+    const fileNameWithoutExtension = fileName.replace(/\.[^/.]+$/, "")
+
+    let selectedStory = null
+
+    if (fileNameWithoutExtension === "TheForgottenLibrary") {
+      selectedStory = stories.TheForgottenLibrary
+    } else if (fileNameWithoutExtension === "MidnightInTheCity") {
+      selectedStory = stories.MidnightInTheCity
+    } else if (fileNameWithoutExtension === "TheLastLightHouse") {
+      selectedStory = stories.TheLastLightHouse
+    } else if (fileNameWithoutExtension === "TheGardenOfEternalSpring") {
+      selectedStory = stories.TheGardenOfEternalSpring
+    } else if (fileNameWithoutExtension === "WhispersFromThePast") {
+      selectedStory = stories.WhispersFromThePast
+    } else if (fileNameWithoutExtension === "TheCodeBreaker") {
+      selectedStory = stories.TheCodeBreaker
+    } else if (fileNameWithoutExtension === "TheComposersLastSymphony") {
+      selectedStory = stories.TheComposersLastSymphony
+    } else if (fileNameWithoutExtension === "TheDreamCatchersDaughter") {
+      selectedStory = stories.TheDreamCatchersDaughter
+    } else {
+      // If filename doesn't match, return error
+      return Response.json({ error: "Tale Cannot be generated" }, { status: 400 })
+    }
+
+    return Response.json({
+      story: selectedStory.content,
+      title: selectedStory.title,
+    })
+  } catch (error) {
+    console.error("[v0] API Error:", error.message)
+    return Response.json({ error: error.message || "Failed to generate story" }, { status: 500 })
+  }
+}
