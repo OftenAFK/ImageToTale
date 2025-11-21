@@ -22,7 +22,7 @@ export function Navbar() {
           <button onClick={() => router.push("/")} className="flex items-center gap-2 cursor-pointer group">
             <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-lg group-hover:shadow-lg group-hover:scale-110 smooth-hover" />
             <span className="font-bold text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hidden sm:inline">
-              ImageToTail
+              ImageToTale
             </span>
           </button>
 
