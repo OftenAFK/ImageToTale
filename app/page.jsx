@@ -87,7 +87,7 @@ export default function HomePage() {
       {/* About Section */}
       <section className="bg-card border-y border-border py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center">{t("aboutImageToTail")}</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">{t("aboutImageToTale")}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div>
               <h3 className="text-xl font-bold mb-4 text-accent">{t("whatWeDo")}</h3>
