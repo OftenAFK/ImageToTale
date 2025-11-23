@@ -55,7 +55,7 @@ export default function SignUpPage() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2">
-            ImageToTail
+            ImageToTale
           </h1>
           <p className="text-muted-foreground">Join our creative community today</p>
         </div>
