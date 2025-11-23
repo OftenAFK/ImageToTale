@@ -4,23 +4,23 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Enhanced Brand Colors - Teal, Orange, Indigo */
-  --primary: oklch(0.55 0.18 200); /* Rich Teal */
-  --primary-accent: oklch(0.68 0.19 30); /* Warm Orange */
-  --primary-light: oklch(0.72 0.15 200); /* Light Teal */
+ 
+  --primary: oklch(0.55 0.18 200); 
+  --primary-accent: oklch(0.68 0.19 30); 
+  --primary-light: oklch(0.72 0.15 200); 
 
-  /* Neutrals - Refined light mode */
-  --background: oklch(0.99 0.01 210); /* Soft off-white with blue tint */
-  --foreground: oklch(0.13 0.02 210); /* Deep navy */
-  --card: oklch(1 0 0); /* Pure white */
+  
+  --background: oklch(0.99 0.01 210); 
+  --foreground: oklch(0.13 0.02 210);
+  --card: oklch(1 0 0); 
   --card-foreground: oklch(0.13 0.02 210);
-  --border: oklch(0.91 0.01 210); /* Soft border */
+  --border: oklch(0.91 0.01 210);
   --muted: oklch(0.93 0.01 210);
   --muted-foreground: oklch(0.48 0.01 210);
 
   /* UI */
   --input: oklch(0.97 0.01 210);
-  --accent: oklch(0.68 0.19 30); /* Warm Orange accent */
+  --accent: oklch(0.68 0.19 30); 
   --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.62 0.22 27);
   --destructive-foreground: oklch(1 0 0);
@@ -49,18 +49,18 @@
 }
 
 .dark {
-  /* Dark mode - Deep with enhanced colors */
-  --background: oklch(0.11 0.01 210); /* Deep navy-black */
-  --foreground: oklch(0.96 0.01 210); /* Almost white */
-  --card: oklch(0.15 0.01 210); /* Dark card */
+  /* Dark mode */
+  --background: oklch(0.11 0.01 210); 
+  --foreground: oklch(0.96 0.01 210); 
+  --card: oklch(0.15 0.01 210); 
   --card-foreground: oklch(0.96 0.01 210);
-  --border: oklch(0.24 0.01 210); /* Dark border */
+  --border: oklch(0.24 0.01 210); 
   --muted: oklch(0.28 0.01 210);
   --muted-foreground: oklch(0.62 0.01 210);
 
-  /* UI - Vibrant accents in dark mode */
+  
   --input: oklch(0.19 0.01 210);
-  --accent: oklch(0.72 0.22 30); /* Brighter orange in dark */
+  --accent: oklch(0.72 0.22 30);
   --accent-foreground: oklch(0.98 0 0);
   --destructive: oklch(0.68 0.22 27);
   --destructive-foreground: oklch(0.98 0 0);
@@ -133,7 +133,7 @@
   }
 }
 
-/* Add keyframe animations for gradient hover effects */
+
 @keyframes gradient-shift {
   0% {
     background-position: 200% center;
@@ -143,7 +143,7 @@
   }
 }
 
-/* Add smooth transitions and hover effects */
+
 @layer components {
   .btn-primary {
     @apply px-6 py-3 bg-gradient-to-r from-primary to-accent hover:shadow-lg hover:scale-105 active:scale-95 text-accent-foreground font-semibold rounded-lg transition-all duration-200;
@@ -153,7 +153,7 @@
     @apply hover:shadow-xl hover:border-accent/50 transition-all duration-300 hover:-translate-y-1;
   }
 
-  /* Add gradient loading animation for feature tiles and buttons */
+  
   .gradient-hover {
     background-size: 200% 100%;
     animation: gradient-shift 0.8s ease-in-out forwards;
