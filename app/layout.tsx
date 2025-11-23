@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "ImageToTail - Transform Images into Stories",
   description: "Turn your images into captivating stories using AI",
-  generator: "v0.app",
+  generator: "MostlyAfk",
   icons: {
     icon: [
       {
